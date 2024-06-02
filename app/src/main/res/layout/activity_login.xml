@@ -75,6 +75,7 @@
         android:layout_height="wrap_content"
         android:hint="root@gmail.com"
         android:textSize="15dp"
+        android:textColor="@color/background"
 
         />
 </LinearLayout>
@@ -100,6 +101,7 @@
             android:hint="*********"
             android:inputType="textPassword"
             android:textSize="15dp"
+            android:textColor="@color/background"
 
             />
     </LinearLayout>

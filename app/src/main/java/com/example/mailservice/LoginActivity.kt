@@ -1,6 +1,9 @@
 package com.example.mailservice
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +19,14 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //Mover a Registro
+        val btnMoveToRegister = findViewById<TextView>(R.id.btnMoveToRegister)
+        btnMoveToRegister.setOnClickListener {
+            btnMoveToRegister.setTextColor(getColor(R.color.white))
+            val segue = Intent(this, RegisterActivity::class.java)
+            startActivity(segue)
+        }
+
     }
 }
