@@ -72,6 +72,7 @@ class LoginActivity : AppCompatActivity() {
                 )
                 Toast.makeText(this, "Login exitoso", Toast.LENGTH_LONG).show()
                 val segue = Intent(this, MailActivity::class.java)
+                segue.putExtra("Usuario",usuario)
                 startActivity(segue)
             } else {
                 Toast.makeText(
