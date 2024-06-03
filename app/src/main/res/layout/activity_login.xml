@@ -48,6 +48,7 @@
             android:textColor="@color/background"
             />
         <EditText
+            android:id="@+id/txtUserLog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="root"
@@ -71,6 +72,7 @@
         android:textColor="@color/background"
         />
     <EditText
+        android:id="@+id/txtEmailLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="root@gmail.com"
@@ -96,6 +98,7 @@
             />
 
         <EditText
+            android:id="@+id/txtPassLog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="*********"
