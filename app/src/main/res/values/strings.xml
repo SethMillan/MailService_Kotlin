@@ -9,4 +9,11 @@
     <string name="defPass">************</string>
     <string name="defEmail">root@gmail.com</string>
     <string name="defUser">root</string>
+
+    <string name="hintEmail">correo@gmail.com</string>
+    <string name="hintAsunto">Asunto urgentemente importante</string>
+    <string name="hintContenido">Escribe tu mensaje</string>
+
+    <string name="txtAsunto">Asunto</string>
+    <string name="txtCorreo">Correo</string>
 </resources>

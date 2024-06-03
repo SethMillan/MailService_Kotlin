@@ -4,5 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name ="background">#31363F</color>
     <color name ="label">#F2F2F2</color>
+    <color name="boton">#50727B</color>
     <color name ="letrasGris">#878787</color>
 </resources>
