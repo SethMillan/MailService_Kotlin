@@ -70,7 +70,9 @@ class LoginActivity : AppCompatActivity() {
                     jsonArray.get(0).toString(),
                     Usuario::class.java
                 )
-                Toast.makeText(this, "Todo correcto", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Login exitoso", Toast.LENGTH_LONG).show()
+                val segue = Intent(this, MailActivity::class.java)
+                startActivity(segue)
             } else {
                 Toast.makeText(
                     this, "Usuario y/o contraseña incorrectos",
