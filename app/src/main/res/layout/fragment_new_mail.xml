@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hintEmail"
-            android:textColor="@color/letrasGris"
+            android:textColor="@color/white"
             android:textColorHint="@color/letrasGris"/>
         <TextView
             android:layout_width="match_parent"
@@ -38,13 +38,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hintAsunto"
-            android:textColor="@color/letrasGris"
+            android:textColor="@color/white"
             android:textColorHint="@color/letrasGris"
             android:layout_marginBottom="10dp"/>
 
         <EditText
             android:layout_marginTop="5dp"
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/txtContenido"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
             android:hint="@string/hintContenido"
             android:inputType="textMultiLine"
             android:padding="10dp"
-            android:textColor="@color/letrasGris"
+            android:textColor="@color/black"
             android:textColorHint="@color/letrasGris"
             />
         <LinearLayout
@@ -63,6 +63,7 @@
             android:orientation="horizontal"
             android:gravity="end">
             <Button
+                android:id="@+id/btnSendNewMessage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Enviar"
