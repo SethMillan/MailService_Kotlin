@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".responderConversacion"
+            android:exported="false" />
+        <activity
             android:name=".MailActivity"
             android:exported="false" />
         <activity

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/remitente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="De: correo@gmail.com"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/destinatario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para: correo@gmail.com"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        />
+    <TextView
+        android:id="@+id/asunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asunto: Asuvghhchjgcjcjcnto"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="asdasdasdasdasdasdasaasdasdasdasdasdasdasdasdasdasdasassdasdas"
+        />
+
+</LinearLayout>
