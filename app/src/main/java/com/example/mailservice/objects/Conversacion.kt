@@ -1,3 +1,5 @@
 package com.example.mailservice.objects
 
-data class Conversacion()
+import java.io.Serializable
+
+data class Conversacion(val id : Int):Serializable
