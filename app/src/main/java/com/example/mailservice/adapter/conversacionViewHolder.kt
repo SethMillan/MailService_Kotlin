@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
@@ -18,5 +19,8 @@ class conversacionViewHolder(view:View): RecyclerView.ViewHolder(view) {
     fun render(mensaje: Mensaje){
         email.text = mensaje.correoEmisor
         asunto.text = mensaje.asunto
+        if(mensaje.leido){
+            itemView.setBackgroundColor(ContextCompat.getColor(itemView.context, R.color.white))
+        }
     }
 }
