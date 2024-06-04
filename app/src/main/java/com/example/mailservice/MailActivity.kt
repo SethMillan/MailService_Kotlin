@@ -16,11 +16,27 @@ class MailActivity : AppCompatActivity() {
         enableEdgeToEdge()
         bingus = ActivityMailBinding.inflate(layoutInflater)
         setContentView(bingus.root)
-        replaceFragment(newMail())
+
+        val user = intent.getStringExtra("usuario")
+
+        // Crea un Bundle con el valor de user
+        val bundle = Bundle().apply {
+            putString("usuario", user)
+        }
+
+        val fragmentoTodo = todos().apply {
+            arguments = bundle
+        }
+        val fragmentoNewMail = newMail().apply {
+            arguments = bundle
+        }
+        fragmentoTodo.arguments = bundle
+        fragmentoNewMail.arguments = bundle
+        replaceFragment(fragmentoNewMail)
         bingus.btnNavView.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.newmail->replaceFragment(newMail())
-                R.id.todos->replaceFragment(todos())
+                R.id.newmail->replaceFragment(fragmentoNewMail)
+                R.id.todos->replaceFragment(fragmentoTodo)
                 else->{
 
                 }
